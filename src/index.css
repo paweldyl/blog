@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .add-post-button {
+  font-size: 35px;
+  padding: 20px;
+  background-color: #0BDE1F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main-page .add-post-button:focus {
+  border: none;
+  outline: none;
+  background-color: #0ACD0E;
+}
+
+.main-page .post-form {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+.main-page .post-form .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.main-page .post-form .close:hover {
+  background-color: #DDD;
+}
+
+.main-page .post-form div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.main-page .post-form div input, .main-page .post-form div textarea {
+  padding: 3px;
+}
+
+.main-page .post-form div input {
+  max-width: 80%;
+}
+
+.main-page .post-form div textarea {
+  min-height: 100px;
+}
+
+.main-page .post-form .add-post-button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+}
+
+.main-page .post {
+  width: calc(100% - 60px);
+  background-color: #EEE;
+  margin: 50px 0 50px 0;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.main-page .post .post-section header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.main-page .post .post-section header div {
+  margin: 7px;
+}
+
+.main-page .post .post-section header .nickname {
+  font-size: 20px;
+  font-weight: 550;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-page .post .post-section header .edit {
+  cursor: pointer;
+}
+
+.main-page .post .post-section header .delete {
+  cursor: pointer;
+}
+
+.main-page .post .post-section .article-text {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-page .post .post-section form textarea {
+  width: 100%;
+  height: 300px;
+}
+
+.main-page .post .post-section footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.main-page .post .post-section footer .toggle-comments {
+  color: white;
+  background-color: #0BDE1F;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.main-page .post .post-section footer .toggle-comments:focus, .main-page .post .post-section footer .toggle-comments:hover {
+  outline: none;
+  background-color: #0ACD0E;
+}
+
+.main-page .post .comments-section {
+  margin-top: 50px;
+}
+
+.main-page .post .comments-section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-page .post .comments-section div input {
+  padding: 5px;
+}
+
+.main-page .post .comments-section .comments {
+  width: 100%;
+}
+
+.main-page .post .comments-section .comments .comment {
+  margin-top: 20px;
+  background-color: #DDD;
+  min-height: 100px;
+}
+
+.main-page .post .comments-section .comments .comment header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  min-height: 60px;
+}
+
+.main-page .post .comments-section .comments .comment header div {
+  padding: 5px;
+}
+
+.main-page .post .comments-section .comments .comment header .user {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-page .post .comments-section .comments .comment header .user .date {
+  font-size: 14px;
+}
+
+.main-page .post .comments-section .comments .comment header .edit {
+  cursor: pointer;
+}
+
+.main-page .post .comments-section .comments .comment header .delete {
+  cursor: pointer;
+}
+
+.main-page .post .comments-section .comments .comment .article-text {
+  padding: 20px;
+}
+
+.main-page .post .comments-section .comments .comment form textarea {
+  width: 100%;
+  height: 150px;
+}
+
+@media screen and (min-width: 600px) {
+  .main-page .post-form {
+    width: 80%;
+  }
+  .main-page .post {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main-page .post-form {
+    width: 60%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-page .post-form .nickname {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-page .post-form textarea {
+    height: 500px;
+    font-size: 20px;
+  }
+  .main-page .post-form .add-post-button {
+    width: auto;
+  }
+  .main-page .post {
+    width: 60%;
+  }
+  .main-page .post .comments-section .add-comment form div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-page .post .comments-section .add-comment form div textarea {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.small-confirm-button {
+  padding: 15px;
+  margin: 10px;
+  background-color: #0BDE1F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.small-confirm-button:focus, .small-confirm-button:hover {
+  border: none;
+  outline: none;
+  background-color: #0ACD0E;
+}
+/*# sourceMappingURL=index.css.map */
